@@ -1,12 +1,13 @@
 const express = require('express');
 const path = require('path');
 const multer = require('multer');
+const config = require('config');
 const {v4 : uuidv4} = require('uuid'); 
 const mongoose = require('mongoose');
 
 const feedRoutes = require('./routes/feed');
 
-const MONGO_CONNECTION_URL = 'mongodb+srv://afferreira:bCouZOhPmbiXLJC3@cluster0.vgdiw.gcp.mongodb.net/blog?retryWrites=true&w=majority';
+const MONGO_CONNECTION_URL = config.get('database.url');
 
 const app = express();
 

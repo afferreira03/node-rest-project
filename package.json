@@ -17,6 +17,7 @@
   "author": "Afferreira",
   "license": "ISC",
   "dependencies": {
+    "config": "^3.3.9",
     "express": "^4.17.2",
     "express-validator": "^6.14.0",
     "mongoose": "^6.2.10",
