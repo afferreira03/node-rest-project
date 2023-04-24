@@ -52,6 +52,7 @@ app.use((error, req, res, next) => {
     res.status(status).json({message:message});
 });
 
+mongoose.set('strictQuery', false);
 mongoose.connect(MONGO_CONNECTION_URL)
     .then(result => {
         app.listen(8080);

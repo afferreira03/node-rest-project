@@ -3,4 +3,5 @@ node_modules
 *.jpg
 *.jpeg
 *.png
-config
+config/*
+images/*
