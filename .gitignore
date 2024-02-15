@@ -3,5 +3,6 @@ node_modules
 *.jpg
 *.jpeg
 *.png
+*.code-workspace
 config/*
 images/*
